@@ -19,15 +19,16 @@ class Review {
     }
 
     static filterByStars(star, ...args){
-        let ans = []
-        for(let i = 0; i < args.length; i++){
-            let el = args[i]
-            if(el.starRating === star){
-                ans.push(el)
+        return args.filter(el => el.starRating === star)
+        // let ans = []
+        // for(let i = 0; i < args.length; i++){
+        //     let el = args[i]
+        //     if(el.starRating === star){
+        //         ans.push(el)
 
-            }
-        }
-        return ans
+        //     }
+        // }
+        // return ans
     }
 
     findReviewByTester(tester, ...args){

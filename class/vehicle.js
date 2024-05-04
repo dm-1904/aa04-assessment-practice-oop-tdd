@@ -29,15 +29,16 @@ class Vehicle {
         }
     }
     getDetails(){
-        return `The ${this.year} ${this.modelName} costs $${this.price} and has 0 reviews.`
+        return `The ${this.year} ${this.modelName} costs $${this.price} and has ${this.reviews.length} reviews.`
     }
 
     findReviewByTester(testerName){
-        let arr = this.reviews
-        for(let i = 0; i < arr.length; i++){
-            let el = arr[i]
-            if(el.tester.name === testerName) return el
-        }
+        return this.reviews.find(el => el.tester.name === testerName)
+        // let arr = this.reviews
+        // for(let i = 0; i < arr.length; i++){
+        //     let el = arr[i]
+        //     if(el.tester.name === testerName) return el
+        // }
     }
 }
 
