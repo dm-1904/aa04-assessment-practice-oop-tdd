@@ -1,5 +1,4 @@
-const Review = require('./review')
-const Tester = require('./tester')
+
 
 class Vehicle {
     constructor(modelName, year, price, reviews){

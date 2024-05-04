@@ -1,5 +1,4 @@
-const Tester = require('./tester')
-const Vehicle = require('./vehicle')
+
 
 class Review {
 
@@ -31,9 +30,7 @@ class Review {
         // return ans
     }
 
-    findReviewByTester(tester, ...args){
-
-    }
+    
 }
 
 
