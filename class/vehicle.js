@@ -27,6 +27,9 @@ class Vehicle {
         this.price = num2
         }
     }
+    getDetails(){
+        return `The ${this.year} ${this.modelName} costs $${this.price} and has 0 reviews.`
+    }
 }
 
 
