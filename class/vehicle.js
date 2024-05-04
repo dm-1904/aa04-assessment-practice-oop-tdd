@@ -1,9 +1,12 @@
+const Review = require('./review')
+
 class Vehicle {
     constructor(modelName, year, price, reviews){
         this.modelName = modelName
         this.year = year
         this.price = price
         this.reviews = []
+
     }
     validate(){
         // console.log(this.modelName)
@@ -30,6 +33,11 @@ class Vehicle {
     getDetails(){
         return `The ${this.year} ${this.modelName} costs $${this.price} and has 0 reviews.`
     }
+    addReview(){
+        console.log(this.reviews)
+        return this.reviews
+    }
+
 }
 
 
